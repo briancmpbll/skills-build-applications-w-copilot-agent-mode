@@ -27,6 +27,9 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 
+# Add specific Codespace host
+ALLOWED_HOSTS.append("curly-yodel-jjx54x447phpq47-8000.app.github.dev")
+
 
 # Application definition
 
@@ -130,3 +133,6 @@ STATIC_URL = "static/"
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
 CORS_ALLOW_ALL_ORIGINS = True
+
+# Add specific Codespace host
+CORS_ORIGIN_WHITELIST.append("https://curly-yodel-jjx54x447phpq47-8000.app.github.dev")
